@@ -1,6 +1,15 @@
 """Practice with conditionals"""
 
 
+def get_ticket_price() -> int:
+    age: int = int(input("What is your age?"))
+    if (age <= 12) or (age > 60):
+        price: int = 5
+    else:
+        price: int = 10
+    return price
+
+
 def less_than_10(num: int) -> None:
     """tell me if nm is < 10."""
     if num < 10:
